@@ -49,7 +49,15 @@
                         "params": {
                             "forceEOL": "\r\n",
                             "deleteComments": ";",
-                            "deleteWhitespace": 1
+                            "deleteWhitespace": 1,
+                            "sourceEncoding": "ascii",
+                            "targetEncoding": "ascii",
+                            "excludeMarkersList": [
+                                [
+                                    ";begin-exclusion-marker",
+                                    ";end-exclusion-marker"
+                                ]
+                            ]
                         },
                         "sourceTargetList": [
                             {
