@@ -1,8 +1,0 @@
-{
-    "tools": {
-        "version": 2,
-        "aliases": {
-            "{TOOLS_DIR}": ".tools"
-        }
-    }
-}
