@@ -159,8 +159,8 @@
                     },
                     {
                         "parent": "GameFilesEdited",
-                        "source": "Art/RGB_PSD_WithoutAlpha.psd",
-                        "target": "Art/RGB_PSD_WithoutAlpha.tga"
+                        "source": "Art/RGB_PSD.psd",
+                        "target": "Art/RGB_PSD.tga"
                     }
                 ]
             },
