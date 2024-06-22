@@ -55,6 +55,12 @@
                 "itemNames": [
                     "SampleEmpty"
                 ]
+            },
+            {
+                "name": "ProjectInvalid",
+                "itemNames": [
+                    "SampleInvalid"
+                ]
             }
         ]
     }
