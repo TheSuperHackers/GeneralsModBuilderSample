@@ -31,11 +31,38 @@
                     },
                     {
                         "parent": "GameFilesEdited",
+                        "params": {
+                            "excludeMarkersList": [
+                                [
+                                    ";begin-exclusion-marker",
+                                    ";end-exclusion-marker"
+                                ]
+                            ]
+                        },
                         "sourceList": [
                             "Data/INI/**/*.ini"
                         ],
                         "registryList": [
                             "Resources/FileHashRegistry/GeneralsZH-104.zip"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "SampleInvalid",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesEdited",
+                        "sourceTargetList": [
+                            {
+                                "source": "Data/Audio/Sounds/sfrenzya.wav",
+                                "target": "Data/Audio/Sounds/sfrenzya.wav"
+                            },
+                            {
+                                "source": "Data/Audio/Sounds/sleafdro.wav",
+                                "target": "Data/Audio/Sounds/sfrenzya__.wav"
+                            }
                         ]
                     }
                 ]
@@ -229,6 +256,12 @@
                         "parent": "GameFilesEdited",
                         "source": "*.psd",
                         "target": "*.bmp"
+                    },
+                    {
+                        "parent": "ReleaseFiles",
+                        "sourceList": [
+                            "**/*"
+                        ]
                     }
                 ]
             }
