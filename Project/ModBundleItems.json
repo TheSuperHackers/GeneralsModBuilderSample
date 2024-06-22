@@ -176,6 +176,10 @@
                                 "target": "Art/*.dds"
                             },
                             {
+                                "source": "Art/*.psd",
+                                "target": "Art/*.tga"
+                            },
+                            {
                                 "source": "Art/*.tga",
                                 "target": "Art/*.dds"
                             },
@@ -184,7 +188,11 @@
                                 "target": "Art/*.bmp"
                             },
                             {
-                                "source": "Art/*.psd",
+                                "source": "Art/*.tif",
+                                "target": "Art/*.dds"
+                            },
+                            {
+                                "source": "Art/*.tif",
                                 "target": "Art/*.tga"
                             }
                         ],
