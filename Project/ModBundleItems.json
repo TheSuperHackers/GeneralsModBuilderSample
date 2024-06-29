@@ -17,7 +17,7 @@
                 "big": true,
                 "files": [
                     {
-                        "parent": "GameFilesEdited",
+                        "sourceParent": "GameFilesEdited",
                         "sourceTargetList": [
                             {
                                 "source": "Data/Audio/Sounds/English/*",
@@ -30,7 +30,6 @@
                         ]
                     },
                     {
-                        "parent": "GameFilesEdited",
                         "params": {
                             "excludeMarkersList": [
                                 [
@@ -39,6 +38,7 @@
                                 ]
                             ]
                         },
+                        "sourceParent": "GameFilesEdited",
                         "sourceList": [
                             "Data/INI/**/*.ini"
                         ],
@@ -53,7 +53,7 @@
                 "big": true,
                 "files": [
                     {
-                        "parent": "GameFilesEdited",
+                        "sourceParent": "GameFilesEdited",
                         "sourceTargetList": [
                             {
                                 "source": "Data/Audio/Sounds/sfrenzya.wav",
@@ -72,7 +72,17 @@
                 "big": true,
                 "files": [
                     {
-                        "parent": "GameFilesEdited",
+                        "sourceParent": "GameFilesEdited",
+                        "sourceTargetList": [
+                            {
+                                "source": "Data/INI/**/*.ini",
+                                "target": "Data/INI/**/*.ini"
+                            },
+                            {
+                                "source": "Data/English/*.ini",
+                                "target": "Data/English/*.*"
+                            }
+                        ],
                         "params": {
                             "forceEOL": "\r\n",
                             "deleteComments": ";",
@@ -85,17 +95,7 @@
                                     ";end-exclusion-marker"
                                 ]
                             ]
-                        },
-                        "sourceTargetList": [
-                            {
-                                "source": "Data/INI/**/*.ini",
-                                "target": "Data/INI/**/*.ini"
-                            },
-                            {
-                                "source": "Data/English/*.ini",
-                                "target": "Data/English/*.*"
-                            }
-                        ]
+                        }
                     }
                 ]
             },
@@ -105,7 +105,7 @@
                 "setGameLanguageOnInstall": "English",
                 "files": [
                     {
-                        "parent": "GameFilesEdited",
+                        "sourceParent": "GameFilesEdited",
                         "source": "Data/generals.str",
                         "target": "Data/English/generals.csf",
                         "params": {
@@ -113,7 +113,7 @@
                         }
                     },
                     {
-                        "parent": "GameFilesEdited",
+                        "sourceParent": "GameFilesEdited",
                         "source": "Data/generals.str",
                         "target": "Data/Spanish/generals.csf",
                         "params": {
@@ -121,7 +121,7 @@
                         }
                     },
                     {
-                        "parent": "GameFilesEdited",
+                        "sourceParent": "GameFilesEdited",
                         "source": "Data/generals_de.str",
                         "target": "Data/German/generals.csf",
                         "params": {
@@ -148,17 +148,17 @@
                 "big": true,
                 "files": [
                     {
-                        "parent": "GameFilesEdited",
+                        "sourceParent": "GameFilesEdited",
                         "source": "Art/RGB_PSD_WithAlphaChannel.psd",
                         "target": "Art/RGB_PSD_WithAlphaChannel.tga"
                     },
                     {
-                        "parent": "GameFilesEdited",
+                        "sourceParent": "GameFilesEdited",
                         "source": "Art/RGB_PSD_WithAlphaLayer.psd",
                         "target": "Art/RGB_PSD_WithAlphaLayer.tga"
                     },
                     {
-                        "parent": "GameFilesEdited",
+                        "sourceParent": "GameFilesEdited",
                         "source": "Art/RGB_PSD.psd",
                         "target": "Art/RGB_PSD.tga"
                     }
@@ -169,7 +169,7 @@
                 "big": true,
                 "files": [
                     {
-                        "parent": "GameFilesEdited",
+                        "sourceParent": "GameFilesEdited",
                         "sourceTargetList": [
                             {
                                 "source": "Art/*.psd",
@@ -210,15 +210,15 @@
                 "big": true,
                 "files": [
                     {
-                        "parent": "GameFilesEdited",
-                        "params": {
-                            "forceEOL": "\r\n",
-                            "deleteWhitespace": 1
-                        },
+                        "sourceParent": "GameFilesEdited",
                         "sourceList": [
                             "Window/*.wnd",
                             "Window/Menus/*.wnd"
-                        ]
+                        ],
+                        "params": {
+                            "forceEOL": "\r\n",
+                            "deleteWhitespace": 1
+                        }
                     }
                 ]
             },
@@ -227,7 +227,7 @@
                 "big": true,
                 "files": [
                     {
-                        "parent": "GameFilesEdited",
+                        "sourceParent": "GameFilesEdited",
                         "sourceTargetList": [
                             {
                                 "source": "Art/Models/AVSentry.blend",
@@ -246,7 +246,7 @@
                         }
                     },
                     {
-                        "parent": "GameFilesEdited",
+                        "sourceParent": "GameFilesEdited",
                         "sourceList": [
                             "Art/W3D/*.w3d"
                         ]
@@ -261,12 +261,12 @@
                 "big": false,
                 "files": [
                     {
-                        "parent": "GameFilesEdited",
+                        "sourceParent": "GameFilesEdited",
                         "source": "*.psd",
                         "target": "*.bmp"
                     },
                     {
-                        "parent": "ReleaseFiles",
+                        "sourceParent": "ReleaseFiles",
                         "sourceList": [
                             "**/*"
                         ]
