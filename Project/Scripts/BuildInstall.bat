@@ -21,6 +21,7 @@ call "%ThisDir%\Windows\Setup.bat"
 call "%ModBuilderExe%" ^
   --build ^
   --install ^
+  --verbose-logging ^
   --config-list %ConfigFiles% %*
 
 endlocal

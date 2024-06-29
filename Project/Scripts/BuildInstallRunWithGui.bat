@@ -24,6 +24,7 @@ call "%ModBuilderExe%" ^
   --run ^
   --uninstall ^
   --gui ^
+  --verbose-logging ^
   --config-list %ConfigFiles% %*
 
 endlocal

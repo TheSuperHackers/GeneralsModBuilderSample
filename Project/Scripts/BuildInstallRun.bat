@@ -23,6 +23,7 @@ call "%ModBuilderExe%" ^
   --install ^
   --run ^
   --uninstall ^
+  --verbose-logging ^
   --config-list %ConfigFiles% %*
 
 endlocal

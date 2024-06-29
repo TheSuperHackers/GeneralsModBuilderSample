@@ -20,6 +20,7 @@ call "%ThisDir%\Windows\Setup.bat"
 
 call "%ModBuilderExe%" ^
   --uninstall ^
+  --verbose-logging ^
   --config-list %ConfigFiles% %*
 
 endlocal

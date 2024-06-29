@@ -23,6 +23,7 @@ call "%ModBuilderExe%" ^
   --install ProjectCore ^
   --run ^
   --uninstall ^
+  --verbose-logging ^
   --config-list %ConfigFiles% %*
 
 endlocal
