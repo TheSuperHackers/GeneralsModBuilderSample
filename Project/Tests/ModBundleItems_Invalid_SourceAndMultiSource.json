@@ -1,0 +1,22 @@
+{
+    "bundles": {
+        "version": 1,
+        "items": [
+            {
+                "name": "SampleInvalidMultiSourceSourceAndMultiSource",
+                "big": true,
+                "files": [
+                    {
+                        "sourceParent": "../GameFilesEdited",
+                        "source": "MultiSource/INI/GameLOD_Part1.ini",
+                        "multiSource": [
+                            "MultiSource/INI/GameLOD_Part2.ini",
+                            "MultiSource/INI/GameLOD_Part3.ini"
+                        ],
+                        "target": "Data/INI/InvalidSourceAndMultiSource.ini"
+                    }
+                ]
+            }
+        ]
+    }
+}

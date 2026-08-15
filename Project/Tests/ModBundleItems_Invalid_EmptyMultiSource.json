@@ -1,0 +1,18 @@
+{
+    "bundles": {
+        "version": 1,
+        "items": [
+            {
+                "name": "SampleInvalidMultiSourceEmpty",
+                "big": true,
+                "files": [
+                    {
+                        "sourceParent": "../GameFilesEdited",
+                        "multiSource": [],
+                        "target": "Data/INI/InvalidEmptyMultiSource.ini"
+                    }
+                ]
+            }
+        ]
+    }
+}

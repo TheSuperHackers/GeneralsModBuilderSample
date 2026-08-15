@@ -272,6 +272,153 @@
                         ]
                     }
                 ]
+            },
+            {
+                "name": "SampleMultiSourceINI",
+                "big": true,
+                "files": [
+                    {
+                        "sourceParent": "GameFilesEdited",
+                        "multiSource": [
+                            "MultiSource/INI/GameLOD_Part1.ini",
+                            "MultiSource/INI/GameLOD_Part2.ini",
+                            "MultiSource/INI/GameLOD_Part3.ini"
+                        ],
+                        "target": "Data/INI/GameLODMultiSource.ini",
+                        "params": {
+                            "forceEOL": "\r\n",
+                            "deleteComments": ";",
+                            "deleteWhitespace": 1,
+                            "sourceEncoding": "ascii",
+                            "targetEncoding": "ascii",
+                            "excludeMarkersList": [
+                                [
+                                    ";begin-exclusion-marker",
+                                    ";end-exclusion-marker"
+                                ]
+                            ]
+                        }
+                    },
+                    {
+                        "sourceParent": "GameFilesEdited",
+                        "multiSourceTargetList": [
+                            {
+                                "multiSource": [
+                                    "MultiSource/INI/Order/30_Third.ini",
+                                    "MultiSource/INI/Order/*.ini"
+                                ],
+                                "target": "Data/INI/MultiSourceOrder.ini"
+                            },
+                            {
+                                "multiSource": [
+                                    "MultiSource/INI/Single/*.ini"
+                                ],
+                                "target": "Data/INI/MultiSourceSingle.ini"
+                            }
+                        ],
+                        "params": {
+                            "forceEOL": "\r\n",
+                            "excludeMarkersList": [
+                                [
+                                    ";begin-exclusion-marker",
+                                    ";end-exclusion-marker"
+                                ]
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "SampleMultiSourceWindow",
+                "big": true,
+                "files": [
+                    {
+                        "sourceParent": "GameFilesEdited",
+                        "multiSource": [
+                            "MultiSource/Window/InGameChat_Part1.wnd",
+                            "MultiSource/Window/InGameChat_Part2.wnd"
+                        ],
+                        "target": "Window/InGameChatMultiSource.wnd",
+                        "params": {
+                            "forceEOL": "\r\n",
+                            "deleteWhitespace": 1
+                        }
+                    },
+                    {
+                        "sourceParent": "GameFilesEdited",
+                        "multiSource": [
+                            "MultiSource/Window/InGameChat_Part1.wnd",
+                            "MultiSource/Window/DoesNotExist*.wnd",
+                            "MultiSource/Window/InGameChat_Part2.wnd"
+                        ],
+                        "target": "Window/InGameChatWithEmptyWildcard.wnd"
+                    },
+                    {
+                        "sourceParent": "GameFilesEdited",
+                        "multiSource": [
+                            "MultiSource/Window/*.wnd"
+                        ],
+                        "target": "Window/InGameChatFromWildcard.wnd",
+                        "sourceTargetList": [
+                            {
+                                "source": "Window/InGamePopupMessage.wnd",
+                                "target": "Window/InGamePopupMessageMultiSource.wnd"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "SampleMultiSourceLanguages",
+                "big": true,
+                "files": [
+                    {
+                        "sourceParent": "GameFilesEdited",
+                        "multiSourceTargetList": [
+                            {
+                                "multiSource": [
+                                    "MultiSource/Text/generals_base.str",
+                                    "MultiSource/Text/generals_override.str"
+                                ],
+                                "target": "Data/English/generals_multisource.csf"
+                            },
+                            {
+                                "multiSource": [
+                                    "MultiSource/Text/generals_base.str",
+                                    "MultiSource/Text/generals_extra.csf",
+                                    "MultiSource/Text/generals_override.str"
+                                ],
+                                "target": "Data/English/generals_multisource_with_csf.csf"
+                            }
+                        ],
+                        "params": {
+                            "language": "English"
+                        }
+                    },
+                    {
+                        "sourceParent": "GameFilesEdited",
+                        "multiSource": [
+                            "MultiSource/Text/generals_base.str",
+                            "MultiSource/Text/generals_override.str"
+                        ],
+                        "target": "Data/MultiSourceAppended.str",
+                        "params": {
+                            "forceEOL": "\r\n",
+                            "deleteWhitespace": 1
+                        }
+                    },
+                    {
+                        "sourceParent": "GameFilesEdited",
+                        "multiSource": [
+                            "MultiSource/Text/generals_base.str",
+                            "MultiSource/Text/generals_extra.csf"
+                        ],
+                        "target": "Data/MultiSourceMerged.str",
+                        "params": {
+                            "language": "English"
+                        }
+                    }
+                ]
             }
         ]
     }

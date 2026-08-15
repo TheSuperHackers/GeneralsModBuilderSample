@@ -57,6 +57,14 @@
                 ]
             },
             {
+                "name": "ProjectMultiSource",
+                "itemNames": [
+                    "SampleMultiSourceINI",
+                    "SampleMultiSourceWindow",
+                    "SampleMultiSourceLanguages"
+                ]
+            },
+            {
                 "name": "ProjectInvalid",
                 "itemNames": [
                     "SampleInvalid"

@@ -1,0 +1,29 @@
+{
+    "bundles": {
+        "version": 1,
+        "items": [
+            {
+                "name": "SampleInvalidMultiSourceUnsupportedTargetType",
+                "big": true,
+                "files": [
+                    {
+                        "sourceParent": "../GameFilesEdited",
+                        "multiSource": [
+                            "MultiSource/INI/GameLOD_Part1.ini",
+                            "MultiSource/INI/GameLOD_Part2.ini"
+                        ],
+                        "target": "Art/InvalidUnsupportedTargetType.tga"
+                    }
+                ]
+            }
+        ],
+        "packs": [
+            {
+                "name": "ProjectInvalidMultiSourceUnsupportedTargetType",
+                "itemNames": [
+                    "SampleInvalidMultiSourceUnsupportedTargetType"
+                ]
+            }
+        ]
+    }
+}
