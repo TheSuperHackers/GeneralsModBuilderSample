@@ -15,13 +15,11 @@ if %errorlevel% EQU 111 (
     exit /B %errorlevel%
 )
 
-call "%ThisDir%\..\Windows\InstallModBuilder.bat"
+call "%ThisDir%\..\Windows\Setup.bat"
 
 if %errorlevel% EQU 222 (
     exit /B %errorlevel%
 )
-
-call "%ThisDir%\..\Windows\Setup.bat"
 
 set FailCount=0
 
@@ -48,7 +46,7 @@ echo Test   : %~1
 echo Expects: %~2
 echo ==============================================================================
 
-call "%ModBuilderExe%" ^
+call "%ModBuilderCmd%" ^
   --build ^
   --verbose-logging ^
   --config-list %ConfigFiles% "%TestDir%\%~1"

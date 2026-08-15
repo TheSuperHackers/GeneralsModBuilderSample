@@ -1,0 +1,3 @@
+[submodule "ThirdParty/GeneralsModBuilder"]
+	path = ThirdParty/GeneralsModBuilder
+	url = https://github.com/TheSuperHackers/GeneralsModBuilder
