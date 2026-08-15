@@ -1,0 +1,20 @@
+{
+    "bundles": {
+        "version": 1,
+        "items": [
+            {
+                "name": "SampleInvalidMultiSourceMissingTarget",
+                "big": true,
+                "files": [
+                    {
+                        "sourceParent": "../GameFilesEdited",
+                        "multiSource": [
+                            "MultiSource/INI/GameLOD_Part1.ini",
+                            "MultiSource/INI/GameLOD_Part2.ini"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
