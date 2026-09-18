@@ -13,9 +13,9 @@ set ConfigFiles=^
 
 :: The Mod Builder. It is a git submodule, so the submodule commit decides which
 :: version is used. Upgrade it with:
-::   git submodule update --remote ThirdParty/GeneralsModBuilder
+::   git submodule update --remote Tools/GeneralsModBuilder
 :: The launcher installs everything the Mod Builder needs on first use.
-set ModBuilderDir=%SetupDir%\..\..\..\ThirdParty\GeneralsModBuilder
+set ModBuilderDir=%SetupDir%\..\..\..\Tools\GeneralsModBuilder
 set ModBuilderCmd=%ModBuilderDir%\modbuilder.cmd
 
 :: Print setup info.

@@ -46,7 +46,7 @@ behaviour. See [Configuration Settings](https://github.com/TheSuperHackers/Gener
 The submodule commit decides which Mod Builder version is used:
 
 ```
-git submodule update --remote ThirdParty/GeneralsModBuilder
-git add ThirdParty/GeneralsModBuilder
+git submodule update --remote Tools/GeneralsModBuilder
+git add Tools/GeneralsModBuilder
 git commit -m "Upgrade the Mod Builder"
 ```
